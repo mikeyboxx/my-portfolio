@@ -16,7 +16,7 @@ function App() {
         currentPage={currentPage}
         handlePageChange={(page) => setCurrentPage(page)}
       />
-      <Portfolio />
+      <Portfolio currentPage={currentPage}/>
       <Footer />
 
     </div>
