@@ -1,7 +1,7 @@
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume';
+import About from './About';
+import Contact from './Contact';
+import Portfolio from './Portfolio';
+import Resume from './Resume';
 
 const renderPage = (currentPage) => {
   switch (currentPage) {

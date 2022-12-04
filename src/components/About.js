@@ -1,4 +1,4 @@
-import profilePic from '../../images/profile-pic.png'
+import profilePic from '../images/profile-pic.png'
 
 const style = {
   image: {
