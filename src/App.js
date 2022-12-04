@@ -1,3 +1,4 @@
+import {useState} from "react";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
@@ -7,9 +8,14 @@ import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('aboutme');
+  
   return (
     <div className="App">
-      <Header />
+      <Header 
+        currentPage={currentPage}
+        handlePageChange={(page) => setCurrentPage(page)}
+      />
       <Portfolio />
       <Footer />
 

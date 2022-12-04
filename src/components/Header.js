@@ -1,19 +1,9 @@
 import React from 'react'
 import Navigation from './Navigation'
 
-
-const styles = {
-  headerStyle: {
-    background: 'red',
-  },
-  headingStyle: {
-    fontSize: 20,
-  },
-};
-
-const Header = () => {
+const Header = ({currentPage, handlePageChange}) => {
   return (
-      <Navigation />
+      <Navigation currentPage={currentPage} pageHandler={handlePageChange}/>
   )
 }
 
