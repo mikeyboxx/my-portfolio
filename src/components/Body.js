@@ -18,7 +18,7 @@ const renderPage = (currentPage) => {
   }
 }
 
-const Portfolio = ({currentPage}) => {
+const Body = ({currentPage}) => {
   return (
     <div>
       {renderPage(currentPage)}
@@ -26,4 +26,4 @@ const Portfolio = ({currentPage}) => {
   )
 }
 
-export default Portfolio
+export default Body
