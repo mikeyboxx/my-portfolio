@@ -1,19 +1,18 @@
-import React from 'react'
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
 
 const renderPage = (currentPage) => {
   switch (currentPage) {
     case 'aboutme': 
-      return (<div>About Me</div>)
-      break;
+      return (<About />)
     case 'portfolio': 
-      return (<div>Portfolio</div>)
-      break;
+      return (<Portfolio />)
     case 'contact': 
-      return (<div>Contact</div>)
-      break;
+      return (<Contact />)
     case 'resume': 
-      return (<div>Resume</div>)
-      break;
+      return (<Resume />)
     default: break;
   }
 }
