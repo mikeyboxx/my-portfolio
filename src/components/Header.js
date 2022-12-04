@@ -1,20 +1,19 @@
 import React from 'react'
 import Navigation from './Navigation'
 
-const style = {
-  header: {
-    display: 'flex',
-    justifyContent: 'space-between'
-  }
-}
+
+const styles = {
+  headerStyle: {
+    background: 'red',
+  },
+  headingStyle: {
+    fontSize: 20,
+  },
+};
+
 const Header = () => {
   return (
-    <div style={style.header}>
-      <div>
-        Michael Nabatov
-      </div>
       <Navigation />
-    </div>
   )
 }
 
