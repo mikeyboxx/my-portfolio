@@ -60,6 +60,7 @@ const Project = ({ project: {title, techUsed, imageSrc, deployedUrl, githubRepoU
         src={imageSrc} 
         alt={`${title} website`} 
       />
+
       <div style={style.caption}>
         <div className='d-flex'>
           <h2 style={style.title} 
@@ -68,14 +69,19 @@ const Project = ({ project: {title, techUsed, imageSrc, deployedUrl, githubRepoU
             onClick={()=>window.open(deployedUrl, '_blank')}>
               {title}
           </h2>
+
           <FaGithub style={style.icon} 
             onMouseOver={() => setIsHoveredIcon(true)} 
             onMouseOut={() => setIsHoveredIcon(false)}
             onClick={()=>window.open(githubRepoUrl, '_blank')}
           />
         </div>
-        <p style={style.techUsed}>{techUsed.join('/')}</p>
+
+        <p style={style.techUsed}>
+          {techUsed.join('/')}
+        </p>
       </div>
+      
     </section>
   )
 }
