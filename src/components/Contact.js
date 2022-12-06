@@ -122,7 +122,7 @@ const Contact = () => {
               rows="3"
             />
           </div>
-          
+
           <button 
             type="submit" 
             className="btn btn-primary" 
